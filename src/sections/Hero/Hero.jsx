@@ -1,5 +1,5 @@
 import styles from './HeroStyles.module.css';
-import profile from '../../assets/profile.png';
+//import profile from '../../assets/profile.png';
 import sun from '../../assets/sun.svg';
 import moon from '../../assets/moon.svg';
 import githubLight from '../../assets/github-light.svg';
@@ -19,11 +19,6 @@ function Hero() {
   return (
     <section id="hero" className={styles.container}>
       <div className={styles.colorModeContainer}>
-        <img
-          src={profile}
-          className={styles.hero}
-          alt="Profile picture of Tia Sajeev"
-        />
         <img
           className={styles.colorMode}
           src={themeIcon}
