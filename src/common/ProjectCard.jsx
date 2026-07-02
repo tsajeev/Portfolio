@@ -13,10 +13,11 @@ function ProjectCard({src,width, height,link, title,p}) {
 export default ProjectCard */
 
 import React from 'react';
+import {Link} from 'react-router-dom';
 import styles from './ProjectCard.module.css';
 
-function ProjectCard({ src, title, description, liveLink, githubLink, tags = [] }) {
-  return (
+function ProjectCard({ src, title, description, liveLink, githubLink, tags = [], caseStudyId }) {
+  const cardContent =  (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
         <img src={src} alt={`${title} preview`} className={styles.image} />
@@ -52,6 +53,14 @@ function ProjectCard({ src, title, description, liveLink, githubLink, tags = [] 
         </div>
       </div>
     </div>
+  );
+
+  return caseStudyId ? (
+    <Link to={`/project/${caseStudyId}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+      <div className={styles.card}>{cardContent}</div>
+    </Link>
+    ) : (
+    <div className={styles.card}>{cardContent}</div>
   );
 }
 

@@ -1,0 +1,124 @@
+.card {
+  width: 100%;
+  max-width: 400px;  
+  height: 440px;   
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 200ms ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+
+.imageContainer {
+  width: calc(100% - 32px);
+  height: 200px;
+  margin: 16px auto 0;
+  
+  background-color: #f3f7fa;
+  border: 1.5px solid #111827;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.headerRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 900;
+  color: #000000;
+  margin: 0;
+  text-align: center;
+}
+
+.links a {
+  color: #4b5563;
+  font-size: 1.2rem;
+  margin-left: 10px;
+  transition: color 0.2s;
+}
+
+.links a:hover {
+  color: #2563eb;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #06385c;
+  line-height: 1.4;
+  margin-bottom: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.tagsContainer {
+  margin-top: auto;     
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #1e3a8a;
+  border: 1px solid #bfdbfe;
+  background-color: #eff6ff;
+  padding: 2px 10px;
+  border-radius: 10px;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  width: 100%;
+  margin-top: auto; 
+}
+
+
+.links {
+  display: flex;
+  gap: 16px;
+  /* If you don't use justify-content: space-between on the parent, you can uncomment this: */
+  /* margin-left: auto;  */
+  flex-shrink: 0;
+}
+
+.links i {
+  font-size: 18px; /* Makes the icons beautifully readable */
+  color: var(--text-color);
+}
+
