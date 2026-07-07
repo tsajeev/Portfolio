@@ -37,7 +37,9 @@ function Contact() {
                     name='Message' 
                     id='message'
                     placeholder='Message'
-                    required></textarea>
+                    required>
+
+                </textarea>
             </div>
             <input className="hover btn" type="submit" value="Submit" />
             

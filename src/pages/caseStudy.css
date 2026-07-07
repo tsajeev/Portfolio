@@ -1,0 +1,14 @@
+
+.cs-page {
+  background: var(--cs-bg);
+  color: var(--cs-ink);
+}
+.cs-accent {
+  color: var(--cs-accent);
+}
+.cs-section-label {
+  font-family: monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: var(--cs-accent);
+}

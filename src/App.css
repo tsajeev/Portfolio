@@ -1,32 +1,32 @@
 /* 1. Register the Regular Font file */
-@font-face {
+/* @font-face {
   font-family: 'StephFont';
   src: url('./assets/steph-font.ttf') format('truetype');
-  font-weight: 400; /* Regular */
+  font-weight: 400; /* Regular 
   font-style: normal;
-}
+} */
 
 /* 2. Register the Bold Font file */
-@font-face {
+/* @font-face {
   font-family: 'StephFont';
   src: url('./assets/steph-font-bold.ttf') format('truetype');
-  font-weight: 700; /* Bold */
+  font-weight: 700; 
   font-style: normal;
-}
+} */
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Quicksand:wght@400;600;700&display=swap');
 
 :root {
     --background-color: #fff;
     --btn-color: #0987f2;
     --btn-text-color: #fff;
-    --project-card-bg: #ffffff00; /* 🔧 Fixed variable name typo 'csrd' -> 'card' */
+    --project-card-bg: #ffffff00; 
     --text-color: #222;
     --form-text-color: #555;
     --footer-text-color: #888;
     
-    /* 🚀 Define Inter globally at the root */
-    /*--font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;*/
-}
+    
+    --font-sans: 'Nunito', -apple-system, BlinkMacSystemFont, sans-serif;}
 
 [data-theme='dark'] {
     --background-color: #222;
@@ -40,7 +40,8 @@
 
 body {
     background-color: var(--background-color);
-    font-family: 'StephFont', sans-serif; /* Ensure base text defaults cleanly */
+    /* font-family: 'StephFont', sans-serif; Ensure base text defaults cleanly */
+    font-family: var(--font-sans);
     display: flex;
     justify-content: center;
     margin: 0 auto 60px;
@@ -59,8 +60,9 @@ h1,h2,h3, p {
 }
 
 h1,h2,h3 {
-    font-family: 'StephFont', sans-serif;
-    font-weight: 700;
+    /* font-family: 'StephFont', sans-serif; */
+    font-family: var(--font-sans);
+    font-weight: 650;
 }
 
 p {
@@ -79,7 +81,8 @@ h2,h3 {
 }
 
 .formGroup textarea, .formGroup input, .hover {
-    font-family: 'StephFont', sans-serif; 
+    /* font-family: 'StephFont', sans-serif;  */
+    font-family: var(--font-sans);
     font-weight: 700;
 }
 

@@ -44,6 +44,7 @@ function Projects() {
           liveLink="https://www.lsmcc.ca/"
           githubLink="https://github.com/your-username/lsmcc"
           tags={["React", "Vite", "CSS Modules"]}
+          caseStudyId="langara-consulting"
         />
         <ProjectCard 
           src={ventureOS} 

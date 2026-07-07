@@ -1,8 +1,12 @@
 
 import React, { createContext, useContext, useEffect, useState } from 'react';
 
+//const ThemeContext = createContext();
+
+/*export const useTheme = () => useContext(ThemeContext); */
 const ThemeContext = createContext();
 
+/* @refresh reset */ // <--- 💡 This tells Vite's Fast Refresh how to safely handle this file
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider = ({ children }) => {

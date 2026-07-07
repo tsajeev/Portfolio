@@ -1,0 +1,88 @@
+.csLayout {
+  display: flex;
+  min-h: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: var(--font-sans); /* Uses your soft Quicksand/Nunito font stack! */
+}
+
+.mainContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.backLink {
+  color: var(--btn-color);
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* Meta Grid Styling */
+.metaGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 24px;
+  background-color: #6fc4d1; /* Match the teal branding theme from your reference */
+  border-radius: 12px;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  .metaGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.metaLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  margin-bottom: 4px;
+}
+
+.metaValue {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* Core Case Study Sections */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionLabel {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #888;
+  letter-spacing: 0.05em;
+}
+
+.sectionHeading {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sectionBody {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Callout highlight blocks */
+.callout {
+  background: rgba(22, 139, 157, 0.1);
+  border-left: 4px solid #168b9d;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 16px 0;
+}
