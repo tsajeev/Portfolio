@@ -24,7 +24,7 @@
   margin: 16px auto 0;
   
   background-color: #f3f7fa;
-  border: 1.5px solid #111827;
+  /* border: 1.5px solid #111827; */
   border-radius: 16px;
   overflow: hidden;
 }
@@ -79,7 +79,7 @@
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   text-align: center;
-  overflow: hidden;
+  overflow: visible;
 }
 
 
